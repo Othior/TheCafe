@@ -13,19 +13,12 @@ body,html{
 }
 
 /* header */
-nav{
-    background: #000000;
-    padding: 2rem 0rem;
-    position: fixed;
-    width: 100%;
-    z-index: 20000;
-}
 .btn{
     display: none;
-    position: absolute;
+    /* position: absolute;
     top: 17px;
     right: 10vw;
-    font-size: 18px;
+    font-size: 18px; */
 }
 nav > ul{
     display: flex;
@@ -286,13 +279,20 @@ h2{
 }
 @media screen and (min-width:350px) and (max-width:1000px){
     nav{
-        /* background-color: #000000;
-        padding: 2rem; */
+        background: #000000;
+        padding: 2rem 0rem;
+        position: fixed;
+        width: 100%;
+        z-index: 20000;
         color: #ccc;
-        /* position: fixed; */
     }
     .btn{
         display: block;
+        position: absolute;
+        top: 17px;
+        right: 10vw;
+        font-size: 18px;
+        z-index: 20000;
     }
     nav > ul {
         position: fixed;
