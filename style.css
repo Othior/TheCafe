@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;600;700&display=swap%27');
+
+html{
+    scroll-behavior: smooth;
+}
+
+body,html{
+    font-family: "Inconsolata", sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* header */
+nav{
+    background: #000000;
+    padding: 2rem 0rem;
+    position: fixed;
+    width: 100%;
+    z-index: 20000;
+}
+.btn{
+    display: none;
+    position: absolute;
+    top: 17px;
+    right: 10vw;
+    font-size: 18px;
+}
+nav > ul{
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: center;
+    align-items: center;
+    background: #000000;
+    /* height: 40px; */
+    width: 100%;
+    padding: 10px 15px;
+    position: fixed;
+    overflow: hidden;
+    z-index: 20000;
+}
+
+nav > ul>li:first-child{
+    padding-left: 15px;
+}
+
+nav > ul >li:last-child{
+   padding-right: 15px;
+}
+
+nav > ul > li > p{
+    color: white;
+    padding: 10px 220px;
+    margin: 0;
+}
+
+nav > ul > li>p:hover{
+    background-color: #ccc;
+    color: black;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+    padding: 0;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+.displayImage{
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.adresseMagasin{
+    margin-right: 30px;
+    color: white;
+}
+
+.heureOuverture{
+    margin-left: 30px;
+    background: #000000;
+    color: white;
+    padding: 2px 10px;
+}
+
+.nomEnseigne{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+    font-size: 90px;
+    color: white;
+}
+
+header{
+    background: url("images/coffeehouse.jpg") no-repeat center center;
+    background-size: cover;
+    height: 80vh;
+    min-height: 75%;
+}
+
+/* main */
+
+main{
+    width: 700px;
+    margin: auto;
+    margin-top: 20px;
+    padding-top: 50px;
+}
+
+h2{
+    background: #000000;
+    color: white;
+    display: flex;
+    justify-content: center;
+    width: 120px;
+    margin: auto;
+    padding: 0px 5px;
+}
+
+/* about */
+
+.aboutTitle{
+    width: 150px;
+}
+
+.aboutContent{
+    margin-top: 80px;
+}
+
+.aboutContent,.aboutDescription,.slogan,.infos{
+    font-size: 18px;
+}
+
+.slogan{
+    background: #f1f1f1;
+    /* height: 150px; */
+    border-left:7px solid #ccc;
+}
+
+.sloganContent{
+    padding: 20px 0px;
+}
+
+.coffeeshop,.coffeHouse{
+    margin-top: 30px;
+    width: 100%;
+    -webkit-filter: grayscale(50%);
+}
+
+span{
+    font-weight:bold;
+}
+
+/* Menu */
+
+.softFood{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 60px;
+    font-size: 17px;
+    height: 50px;
+}
+
+.menu,.softFood{
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+}
+
+.eat,.drink{
+    padding-left: 15px;
+}
+.Eat.change,.Drink.change{
+    background:"#616161";
+    color:white;
+}
+.eatContent.show,.drinkContent.show{
+    display: block; 
+}
+.eatContent.hide,.drinkContent.hide{
+    display: none;
+}
+.eat>ul>li,.drink>ul>li{
+    font-size: 18px;
+    margin-top:60px;
+}
+
+.eat>ul>li>p,.drink>ul>li>p{
+    color:#757575;
+    font-size: 16px;
+}
+
+.eat>ul>li:last-child,.drink>ul>li:last-child{
+    padding-bottom:60px;
+}
+
+.menuTitle{
+    margin-top: 40px;
+}
+
+#eat,#drink{
+    width: 50%;
+    padding: 10px 0px;
+    border: 0;
+}
+
+#eat{
+    margin-left: 10px;
+}
+
+#drink{
+    margin-right: 10px;
+    
+}
+
+/* Where */
+
+.whereTitle{
+    margin-top: 80px;
+    width: 210px;
+    padding: 0px 5px;
+}
+
+.mapPicture{
+    width: 100%;
+    -webkit-filter: grayscale(75%);
+}
+.findUs{
+    padding-top: 60px;
+}
+#where>p{
+    font-size: 17px;
+}
+
+.FYI{
+    color: white;
+    background: #000;
+    padding: 5px 8px;
+    text-align: center;
+}
+
+input{
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+    width: calc(100% - 20px);
+    height: 60px;
+    font-size: 15px;
+    padding: 0px 10px;
+}
+
+.forms>input:last-child{
+    width: 22%;
+    height: 50px;
+    color: white;
+    background: #000000;
+    padding: 0px 10px;
+}
+h2{
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+/* responsive */
+@media screen and (min-width:1400px) and (max-width:1600px){
+    nav > ul > li > p{
+        padding: 10px 170px;
+    }
+}
+@media screen and (min-width:1000px) and (max-width:1400px){
+    nav > ul > li > p{
+        padding: 10px 130px;
+    }
+}
+@media screen and (min-width:350px) and (max-width:1000px){
+    nav{
+        /* background-color: #000000;
+        padding: 2rem; */
+        color: #ccc;
+        /* position: fixed; */
+    }
+    .btn{
+        display: block;
+    }
+    nav > ul {
+        position: fixed;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        margin: 2rem 0rem;
+        left: -100%;
+    }
+    nav ul li{
+        margin: 2rem 0rem;
+        padding: 0px;
+    }
+    nav > ul > li > p{
+        padding: 0;
+        margin: 0;
+        /* width: 100%; */
+    }
+    nav > ul>li:first-child{
+        padding-left: 0px;
+    }
+    
+    nav > ul >li:last-child{
+       padding-right: 0px;
+    }
+    main{
+        width:75vw;
+    }
+    .slogan{
+        /* padding: 2rem 2rem; */
+        height: none;
+    }
+    .sloganContent{
+        padding: 20px 0px;
+    }
+    .displayImage{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+         margin: -6rem 0rem; 
+    }
+    .heureOuverture{
+        width: 140px;
+        margin: 0;
+    }
+    .adresseMagasin{
+        margin: 0;
+    }
+}
+
